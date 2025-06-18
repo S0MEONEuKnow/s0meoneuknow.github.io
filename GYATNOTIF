@@ -180,7 +180,7 @@ local function FadeOutAfter(Object, Seconds)
 end
 
 
-	Notify = function(Properties)
+	return(function(Properties)
 		local Properties = typeof(Properties) == "table" and Properties or {};
 		local Title = Properties.Title;
 		local Description = Properties.Description;
@@ -216,4 +216,4 @@ end
 			table.insert(InstructionObjects, {NewLabel, 0, false});
 			coroutine.wrap(FadeOutAfter)(NewLabel, Duration);
 		end
-	end
+	end)
