@@ -1,0 +1,5 @@
+return {
+["build"] = "hJ63",
+["name"] = "skibidi.exe",
+["whitelist"] = "34255145"
+}
